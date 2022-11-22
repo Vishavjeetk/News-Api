@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recycler_item_relative_layout"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/recycler_item_image"
+        android:layout_alignParentTop="true"
+        android:background="#808080"
+        android:contentDescription="@string/image" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#808080"
+        android:textSize="20sp"
+        android:layout_below="@+id/recycler_item_image"
+        android:layout_marginTop="10dp"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:id="@+id/recycler_item_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#808080"
+        android:layout_below="@+id/recycler_item_title"
+        android:id="@+id/recycler_item_description"
+        android:layout_marginTop="10dp"/>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_item_image"
+        android:layout_alignParentEnd="true"
+        android:text="image"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycler_item_description"
+        android:layout_marginTop="20dp"
+        android:background="#808080"
+        android:id="@+id/recycler_item_published_at"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/shape"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/recycler_item_published_at"
+        android:contentDescription="@string/image" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/drawer_profile"
+            android:title="Profile"
+            android:icon="@drawable/person_icon"/>
+
+        <item android:id="@+id/drawer_email"
+            android:title="Email"
+            android:icon="@drawable/email_icon"/>
+
+    </group>
+
+    <item android:title="@string/contact_us">
+
+    <menu>
+
+        <item android:id="@+id/drawer_instagram_handle"
+            android:title="Instagram"/>
+        <item android:id="@+id/drawer_facebook_handle"
+            android:title="Facebook"/>
+
+    </menu>
+
+    </item>
+
+    <item android:title="Extras">
+        <menu>
+            <item android:title="Log Out"
+                android:id="@+id/logOut"/>
+        </menu>
+    </item>
+
+</menu>
